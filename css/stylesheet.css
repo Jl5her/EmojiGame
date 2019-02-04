@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+  background: #EFEFEF;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+#text {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+#text i {
+  font-style: normal;
+  font-size: 93px;
+}
+
+#text i:first-child:after {
+  font-family: Roboto;
+  content: ': ';
+}
+
+#picker {
+  background: #222;
+  height: 270px;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#picker i {
+  font-size: 38px;
+  font-style: normal;
+  position: absolute;
+  text-shadow: -1px 1px #777;
+}
+
+#picker i:hover {
+  cursor: pointer;
+}
+
+#label {
+  position: fixed;
+  bottom: 240px;
+  left: 10px;
+  color: #999;
+  width: 200px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+
+#timer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  font-family: "Oswald";
+  font-size: 28px;
+}
+
+#timer:hover {
+  cursor: pointer;
+}
+
+#categoryPicker {
+  background: #EFEFEF;
+  position: absolute;
+  bottom: 270px;
+}
+
+#categoryPicker img {
+  height: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 5px 2px;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.marker {
+  position: fixed;
+  bottom: 310px;
+  left: 0px;
+  width: 38px;
+  border-bottom: 2px solid blue;
+}
+
+#reset {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  font-family: "Oswald";
+  font-size: 14px;
+  color: #697ADA;
+}
+
+#reset:hover {
+  cursor: pointer;
+}
+
+#words {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  font-family: "Oswald";
+  font-size: 14px;
+  color: #380D93;
+}
+
+#words:hover {
+  cursor: pointer;
+}

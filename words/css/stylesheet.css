@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+  cursor: pointer;
+}
+
+html, body {
+  overflow: hidden;
+  background: #EFEFEF;
+  font-family: Roboto;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+#container {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+}
+
+h1, h3 {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  color: #444;
+  font-weight: normal;
+  font-family: "Roboto Slab";
+  font-size: 4.2em;
+}
+
+h3 {
+  color: #333;
+  font-weight: bold;
+  font-family: "Oswald";
+  font-size: 2.5em;
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    h1 {
+      font-size: 2em;
+    }
+    
+    h3 {
+      font-size: 1em;
+    }
+}
